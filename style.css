@@ -9,7 +9,7 @@
 	--color-tiffany: #a100d7;
 	--profile-theme: #db4581;
 	--timeline-circle-theme: #14253e;
-	
+
 	--pgbar-length: 100%;
 
 	--MATH-PI: 3.1415px;
@@ -18,9 +18,9 @@
 
 html {
 	font-size: 100%;
-    font-family: "dana",'PT Sans', sans-serif;
+	font-family: "dana", 'PT Sans', sans-serif;
 
-    direction: rtl;
+	direction: rtl;
 
 }
 
@@ -48,9 +48,10 @@ body {
 	background-color: var(--color-gray-light-1);
 	box-shadow: -13px 0px 15px 0px #b3b3b3;
 	z-index: 5;
-  order: 0;
+	order: 0;
 
 }
+
 .profile {
 
 	position: relative;
@@ -60,6 +61,7 @@ body {
 	text-align: center;
 	user-select: none;
 }
+
 .profile::after {
 	content: " ";
 	position: absolute;
@@ -70,10 +72,12 @@ body {
 	background-color: var(--profile-theme);
 	transform: skewY(5deg);
 }
+
 .photo img {
 	width: 90%;
 	border-radius: 50%;
 }
+
 .bio .name {
 	font-size: 1.5rem;
 	text-align: center;
@@ -81,6 +85,7 @@ body {
 	margin: 0;
 	margin-top: 1rem;
 }
+
 .bio .profession {
 	font-size: 1rem;
 	text-align: center;
@@ -92,29 +97,36 @@ body {
 	padding: 0 1rem;
 	color: var(--color-gray-dark-1);
 }
+
 .intro-section .title {
 	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
-.contact-info{
-  direction: ltr;
+
+.contact-info {
+	direction: ltr;
 }
-.about{
-  margin-bottom: 2rem;
+
+.about {
+	margin-bottom: 2rem;
 }
+
 .about .paragraph {
-  color: #282828;
+	color: #282828;
 	text-align: justify;
 }
+
 .info-section {
 	margin: 1rem 0;
 }
+
 .info-section span {
 	position: relative;
 	transition: all 0.3s;
 }
+
 .info-section i {
 	color: var(--profile-theme);
 	width: 20px;
@@ -125,10 +137,12 @@ body {
 	text-decoration: none;
 	color: inherit;
 }
-.info-section.link span{
-  /* font-family: Courgette; */
+
+.info-section.link span {
+	/* font-family: Courgette; */
 
 }
+
 .link span::after {
 	position: absolute;
 	content: '';
@@ -139,13 +153,14 @@ body {
 	background-color: var(--profile-theme);
 	transition: width 0.3s;
 	/*transition-timing-function: cubic-bezier(.64,.51,.16,.86);*/
-	transition-timing-function: cubic-bezier(.92,.57,.33,1.02);
+	transition-timing-function: cubic-bezier(.92, .57, .33, 1.02);
 	transform: translate(-50%, 0);
 }
 
 .link span:hover {
 	color: var(--profile-theme);
 }
+
 .link span:hover::after {
 	width: 100%;
 }
@@ -156,32 +171,40 @@ body {
 	background-color: white;
 	padding: 2rem;
 }
-.detail:hover > .detail-section:not(:hover) {
+
+.detail:hover>.detail-section:not(:hover) {
 	opacity: 0.4;
 }
+
 .detail-section {
 	transition: all 0.3s;
 }
+
 .detail-section:not(:last-of-type) {
 	padding-bottom: 1rem;
 }
+
 .detail-title {
 	display: flex;
-  gap: 2px;
+	gap: 2px;
 	/* align-items: center; */
 }
-.detail-section > .detail-content {
+
+.detail-section>.detail-content {
 	padding: 1.5rem;
 	padding-left: 2rem;
 	user-select: none;
 }
-.detail-section.edu > .detail-content {
+
+.detail-section.edu>.detail-content {
 	padding-left: calc(1.5rem + 10px);
 }
-.title-icon + span {
+
+.title-icon+span {
 	font-size: 1.5rem;
 	transition: all 0.3s;
 }
+
 .title-icon {
 	display: inline-flex;
 	justify-content: center;
@@ -194,50 +217,65 @@ body {
 	border-radius: 50%;
 	transition: all 0.3s;
 }
+
 .title-icon i {
 	color: white;
 	line-height: 1rem;
 	font-size: 1rem;
 	text-align: center;
 }
+
 .detail-section:hover .title-icon {
 	transform: scale(1.5);
 	margin-left: 1.2rem;
 }
-.detail-section:hover .title-icon + span {
+
+.detail-section:hover .title-icon+span {
 	letter-spacing: 1.5px;
 }
-.pg-skill .detail-content{
-  direction: ltr;
+
+.pg-skill .detail-content {
+	direction: ltr;
 }
+
 /* time line block in education section */
-.timeline-block ,.edu {
+.timeline-block {
 	position: relative;
 	padding-left: 30px;
-  margin-right: 24px;
-  margin-bottom: 15px;
+	margin-right: 24px;
+	margin-bottom: 15px;
 }
-.timeline-block:not(:last-of-type),.edu:not(:last-of-type) {
-	margin-bottom: 1rem;	
+
+.timeline-block:not(:last-of-type) {
+	margin-bottom: 1rem;
 }
-.timeline-block h1,.edu h1  {
+
+.timeline-block h1,
+.edu h1 {
 	font-size: 1.2rem;
 	margin: 5px 0;
 	transition: all 0.3s;
 }
-.timeline-block p , .edu p {
+
+.timeline-block p,
+.edu p {
 	font-size: 1rem;
 	margin: 5px 0;
 }
-.timeline-block section ,.edu section  {
+
+.timeline-block section,
+.edu section {
 	font-size: 0.9rem;
-  color: rgb(71, 71, 71);
+	color: rgb(71, 71, 71);
 	margin: 5px 0;
 }
-.timeline-block time ,.edu time  {
+
+.timeline-block time,
+.edu time {
 	font-size: 0.85rem;
 	color: var(--color-gray-dark-2);
 }
+
 .timeline-block::before {
 	position: absolute;
 	content: '';
@@ -249,6 +287,7 @@ body {
 	right: -23px;
 	top: 4px;
 }
+
 .timeline-block::after {
 	position: absolute;
 	content: '';
@@ -258,42 +297,52 @@ body {
 	right: -15px;
 	top: 23px;
 }
+
 .timeline-block:hover h1 {
 	color: var(--color-tiffany);
 }
+
 .timeline-block:hover::before {
 	animation: circle 1.2s infinite;
 }
 
 /* Programming skills section */
-.pg-list, .tool-list, .favor-list {
+.pg-list,
+.tool-list,
+.favor-list {
 	padding: 0;
 	list-style: none;
 }
-.lang-list{
-  list-style: none;
-  display: flex;
-  gap: 50px;
+
+.lang-list {
+	list-style: none;
+	display: flex;
+	gap: 50px;
 	/* align-items: center; */
 }
-.lang-list li{
-  flex: 0 0 45%;
+
+.lang-list li {
+	flex: 0 0 45%;
 }
-.pg-list > li {	
+
+.pg-list>li {
 	margin: 1rem 0;
 	display: flex;
 	align-items: center;
 }
+
 .sb-skeleton {
 	position: relative;
 	flex: 1 0 auto;
 	height: 2px;
 	background-color: var(--color-gray-dark-3);
 }
-.pg-list > li > span {
+
+.pg-list>li>span {
 	flex: 0 0 100px;
 }
-.sb-skeleton > .skillbar {
+
+.sb-skeleton>.skillbar {
 	position: absolute;
 	left: 0;
 	top: -1px;
@@ -301,68 +350,80 @@ body {
 	height: 4px;
 	background-color: var(--profile-theme);
 }
+
 .tool-list {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
 }
-.tool-list > li {
+
+.tool-list>li {
 	position: relative;
 	text-align: center;
 	flex: 0 0 25%;
 }
-.tool-list > li > svg {
+
+.tool-list>li>svg {
 	position: relative;
 	fill: transparent;
 	width: 95%;
 	transform: rotate(-90deg);
 }
-.tool-list > li > svg > circle {
+
+.tool-list>li>svg>circle {
 	stroke-width: 1px;
 	stroke: #cdcdcd;
 }
-.tool-list > li > svg > circle.cbar {
+
+.tool-list>li>svg>circle.cbar {
 	stroke-width: 3px;
 	stroke: var(--profile-theme);
 	stroke-linecap: round;
 	stroke-dashoffset: 0;
 	stroke-dasharray: calc(var(--MATH-PI) * 45 * 2);
 	transition: all 0.8s;
-	transition-timing-function: cubic-bezier(.64,.51,.16,.86);
+	transition-timing-function: cubic-bezier(.64, .51, .16, .86);
 }
-.tool-list > li:hover > svg > circle.cbar {
+
+.tool-list>li:hover>svg>circle.cbar {
 	stroke-width: 4px;
 	stroke: var(--color-tiffany);
 	stroke-dashoffset: calc(var(--MATH-PI) * 45 * 2 * (1 - var(--percent)));
 }
-.tool-list > li > .tl-name,
-.tool-list > li > .tl-exp {
+
+.tool-list>li>.tl-name,
+.tool-list>li>.tl-exp {
 	position: absolute;
 	left: 50%;
 	color: var(--color-gray-dark-1);
 }
-.tool-list > li > .tl-name {
+
+.tool-list>li>.tl-name {
 	top: 50%;
 	font-size: 1.2rem;
 	transform: translate(-50%, -50%);
 }
-.tool-list > li > .tl-exp {	
+
+.tool-list>li>.tl-exp {
 	top: calc(50% + 1.4rem);
 	font-size: 1rem;
 	transform: translate(-50%, -50%);
 }
+
 /* Interests Section */
 .outer-frame {
 	border: 1px solid var(--color-gray-dark-3);
 	border-radius: 5px;
 }
+
 .favor-list {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	align-content: center;
 }
-.favor-list > li {
+
+.favor-list>li {
 	display: flex;
 	flex: 1 0 0;
 	align-items: center;
@@ -372,7 +433,8 @@ body {
 	padding: 1rem 0;
 	transition: all 0.3s;
 }
-.favor-list > li > i {
+
+.favor-list>li>i {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -380,43 +442,53 @@ body {
 	width: 50px;
 	height: 50px;
 }
-.favor-list > li:hover {
+
+.favor-list>li:hover {
 	transform: scale(1.2);
 	color: var(--color-tiffany);
 }
-.favor-list > li > span {
+
+.favor-list>li>span {
 	letter-spacing: 1px;
 }
 
 @keyframes circle {
-  0% {
-    box-shadow: 0 0 0 0px rgba(51, 52, 57, 1);
-  }
-  100% {
-    box-shadow: 0 0 0 6px rgba(51, 52, 57, 0);
-  }
+	0% {
+		box-shadow: 0 0 0 0px rgba(51, 52, 57, 1);
+	}
+
+	100% {
+		box-shadow: 0 0 0 6px rgba(51, 52, 57, 0);
+	}
 }
 
 @media (max-width: 1024px) {
 	html {
 		font-size: 90%;
 	}
+
 	.wrapper {
 		flex-direction: column;
 	}
-	.intro, .detail {
+
+	.intro,
+	.detail {
 		flex: 0 0 100%;
 		box-shadow: none;
 	}
+
 	.intro-section {
 		padding: 0 2rem;
 	}
+
 	.profile {
 		margin-bottom: 1rem;
 	}
+
 	.profile::after {
 		display: none;
 	}
+
 	.photo img {
 		width: 100px;
 		height: 100px;
@@ -427,55 +499,60 @@ body {
 	html {
 		font-size: 80%;
 	}
+
 	.tool-list {
 		flex-wrap: wrap;
 	}
-	.tool-list > li {
+
+	.tool-list>li {
 		flex: 0 0 33.33%;
 	}
-	.favor-list > li {
+
+	.favor-list>li {
 		flex: 0 0 33.3333%;
 	}
 }
+
 @media (max-width: 500px) {
 	html {
 		font-size: 70%;
 	}
-} 
+}
 
 
 
 
 @font-face {
-  font-family: dana;
-  src:
-      url("./fonts/dana-cdnfonts/dana regular.ttf"),
-      url("./fonts/dana-cdnfonts/dana medium.ttf"),
-      url("./fonts/dana-cdnfonts/danablack.ttf"),
-      url("./fonts/dana-cdnfonts/dana demibold.ttf"),
-      url("./fonts/dana-cdnfonts/dana extrabold.ttf"),
-      url("./fonts/dana-cdnfonts/dana light.ttf"),
-      url("./fonts/dana-cdnfonts/dana bold.ttf"),
-      url("./fonts/dana-cdnfonts/dana extralight.ttf"),
-      url("./fonts/dana-cdnfonts/dana thin.ttf");
+	font-family: dana;
+	src:
+		url("./fonts/dana-cdnfonts/dana regular.ttf"),
+		url("./fonts/dana-cdnfonts/dana medium.ttf"),
+		url("./fonts/dana-cdnfonts/danablack.ttf"),
+		url("./fonts/dana-cdnfonts/dana demibold.ttf"),
+		url("./fonts/dana-cdnfonts/dana extrabold.ttf"),
+		url("./fonts/dana-cdnfonts/dana light.ttf"),
+		url("./fonts/dana-cdnfonts/dana bold.ttf"),
+		url("./fonts/dana-cdnfonts/dana extralight.ttf"),
+		url("./fonts/dana-cdnfonts/dana thin.ttf");
 }
 
 @font-face {
-  font-family: gulzar;
+	font-family: gulzar;
 
-  src: url('./fonts/Gulzar-Regular.ttf'),
+	src: url('./fonts/Gulzar-Regular.ttf'),
 
 }
 
 @font-face {
-  font-family: vazirmatn;
+	font-family: vazirmatn;
 
-  src: url('./fonts/Vazirmatn-VariableFont_wght.ttf'),
+	src: url('./fonts/Vazirmatn-VariableFont_wght.ttf'),
 
 }
-@font-face {
-  font-family: Courgette;
 
-  src: url('./fonts/Courgette-Regular.ttf'),
+@font-face {
+	font-family: Courgette;
+
+	src: url('./fonts/Courgette-Regular.ttf'),
 
 }
